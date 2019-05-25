@@ -12,3 +12,19 @@ touch DockerFile
 
 # instalar o express
 $ npm install express
+
+# montando a imagem
+$ docker build -t sicemal/dockernode .
+
+# rodando a aplicação
+$ docker run -p 3000:3000 -d sicemal/dockernode
+
+# ERROR: for app  Cannot create container for service app: b'An unexpected error occurred while sharing drive'
+# Unable to share drive
+#
+# Docker --> Settings.
+# Chose D to share for example( drive C is the same).
+# Input OS passwords.
+# Then docker restarted.
+# But D is also not shared.
+# refs https://github.com/docker/for-win/issues/2946
