@@ -1,6 +1,7 @@
 
 # refs: 
 # https://www.youtube.com/watch?v=AVNADGzXrrQ
+# https://www.youtube.com/watch?v=kqBCHYf_adA
 # https://docs.docker.com/
 
 # criando a aplicação node
@@ -28,3 +29,10 @@ $ docker run -p 3000:3000 -d sicemal/dockernode
 # Then docker restarted.
 # But D is also not shared.
 # refs https://github.com/docker/for-win/issues/2946
+
+
+# Export and Import images
+# refs: https://www.youtube.com/watch?v=ezNtmcSQAHQ
+docker images
+docker save imagename -o imagename.tar
+docker load -i imagename.tar
