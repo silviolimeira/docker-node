@@ -35,4 +35,5 @@ $ docker run -p 3000:3000 -d sicemal/dockernode
 # refs: https://www.youtube.com/watch?v=ezNtmcSQAHQ
 docker images
 docker save imagename -o imagename.tar
+docker rmi imagename # remove image file
 docker load -i imagename.tar
